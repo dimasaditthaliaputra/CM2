@@ -1,3 +1,4 @@
+// Dimas Adit Thalia Putra / 06
 public class TransaksiQueue {
     TransaksiLayanan[] data;
     int front;
