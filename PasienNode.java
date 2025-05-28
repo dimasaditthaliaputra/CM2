@@ -1,3 +1,4 @@
+// Pranata Putrandana
 public class PasienNode {
     Pasien data;
     PasienNode next;

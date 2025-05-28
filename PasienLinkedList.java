@@ -1,3 +1,4 @@
+// Pranata Putrandana
 public class PasienLinkedList {
     PasienNode head;
     PasienNode tail;
@@ -9,6 +10,7 @@ public class PasienLinkedList {
         this.size = 0;
     }
 
+    // Menambah pasien di akhir antrian (enqueue)
     public void enqueue(Pasien p) {
         PasienNode baru = new PasienNode(p);
         if (head == null) {
@@ -22,6 +24,7 @@ public class PasienLinkedList {
         System.out.println("  >> Pasien \"" + p.nama + "\" berhasil ditambahkan ke antrian.");
     }
 
+    // Mengambil pasien di depan antrian (dequeue)
     public Pasien dequeue() {
         if (isEmpty()) {
             return null;
@@ -43,9 +46,10 @@ public class PasienLinkedList {
         return size;
     }
 
+    // Menampilkan semua pasien yang sedang antre
     public void displayAntrian() {
         if (isEmpty()) {
-            System.out.println("  >> Antrian kosong, ga ada pasien.");
+            System.out.println("  >> Antrian kosong, tidak ada pasien.");
             return;
         }
         System.out.println("  === DAFTAR PASIEN DALAM ANTRIAN ===");
