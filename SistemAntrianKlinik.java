@@ -1,3 +1,4 @@
+// Dimas Adit Thalia Putra / 06 & Pranata Putrandana / 19
 import java.util.Scanner;
 
 public class SistemAntrianKlinik {
