@@ -35,7 +35,6 @@ public class SistemAntrianKlinik {
                     break;
 
                 case 2:
-                    System.out.println("Daftar Antrian :");
                     antrianPasien.displayAntrian();
                     break;
 
