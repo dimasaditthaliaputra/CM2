@@ -10,9 +10,8 @@ public class PasienLinkedList {
         this.size = 0;
     }
 
-    // Menambah pasien di akhir antrian (enqueue)
     public void enqueue(Pasien p) {
-        PasienNode baru = new PasienNode(p);
+        PasienNode baru = new PasienNode(p, null);
         if (head == null) {
             head = baru;
             tail = baru;
@@ -21,10 +20,9 @@ public class PasienLinkedList {
             tail = baru;
         }
         size++;
-        System.out.println("  >> Pasien \"" + p.nama + "\" berhasil ditambahkan ke antrian.");
+        System.out.println("Pasien \"" + p.nama + "\" berhasil ditambahkan ke antrian.");
     }
 
-    // Mengambil pasien di depan antrian (dequeue)
     public Pasien dequeue() {
         if (isEmpty()) {
             return null;
@@ -46,21 +44,16 @@ public class PasienLinkedList {
         return size;
     }
 
-    // Menampilkan semua pasien yang sedang antre
     public void displayAntrian() {
         if (isEmpty()) {
-            System.out.println("  >> Antrian kosong, tidak ada pasien.");
+            System.out.println("Antrian kosong, tidak ada pasien.");
             return;
         }
-        System.out.println("  === DAFTAR PASIEN DALAM ANTRIAN ===");
+        System.out.println("=== DAFTAR PASIEN DALAM ANTRIAN ===");
         PasienNode curr = head;
-        int no = 1;
         while (curr != null) {
-            System.out.println("  #" + no);
             curr.data.tampil();
-            System.out.println("----------------------------");
             curr = curr.next;
-            no++;
         }
     }
 }

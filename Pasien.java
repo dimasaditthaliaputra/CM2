@@ -9,6 +9,6 @@ public class Pasien {
     }
 
     public void tampil(){
-        System.out.println("Nama Dokter : " + nama + " NIK : " + nik + " Keluhan : " + keluhan);
+        System.out.println("NAMA : " + nama + " | NIK : " + nik + " | KELUHAN : " + keluhan);
     }
 }
