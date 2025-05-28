@@ -8,6 +8,7 @@ public class TransaksiQueue {
     public TransaksiQueue(int max) {
         data = new TransaksiLayanan[max];
         front = rear = size = 0;
+        this.max = max; 
     }
 
     public boolean isEmpty() {
@@ -16,7 +17,7 @@ public class TransaksiQueue {
 
     public boolean isFull() {
         return size == max;
-    }
+    }    
 
     public void enqueue(TransaksiLayanan dataTransaksi) {
         if (isFull()) {
