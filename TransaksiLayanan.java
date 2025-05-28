@@ -17,8 +17,8 @@ public class TransaksiLayanan {
     }
 
     public void tampil() {
-        System.out.println("Id Dokter" + dokter.idDokter + "Nama Dokter : " + dokter.nama);
-        System.out.println("NIK : " + pasien.nik + "Nama Pasien : " + pasien.nama +  " Keluhan : " + pasien.keluhan);
-        System.out.println("Durasi Layanan : " + durasiLayanan + " Biaya : " + hitungBiaya());
+        System.out.println("Id Dokter : " + dokter.idDokter + "\t | Nama Dokter : " + dokter.nama);
+        System.out.println("NIK : " + pasien.nik + "\t | Nama Pasien : " + pasien.nama +  "\t | Keluhan : " + pasien.keluhan);
+        System.out.println("Durasi Layanan : " + durasiLayanan + "\t | Biaya : " + hitungBiaya());
     }
 }
