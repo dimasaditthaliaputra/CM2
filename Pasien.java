@@ -1,0 +1,13 @@
+public class Pasien {
+    String nama, nik, keluhan;
+
+    public Pasien(String nama, String nik, String keluhan) {
+        this.nama = nama;
+        this.nik = nik;
+        this.keluhan = keluhan;
+    }
+
+    public void tampil(){
+        System.out.println("Nama Dokter : " + nama + " NIK : " + nik + " Keluhan : " + keluhan);
+    }
+}
