@@ -10,7 +10,7 @@ public class PasienLinkedList {
         this.size = 0;
     }
 
-    public void enqueue(Pasien p) {
+    public void add(Pasien p) {
         PasienNode baru = new PasienNode(p, null);
         if (head == null) {
             head = baru;
@@ -23,7 +23,7 @@ public class PasienLinkedList {
         System.out.println("Pasien \"" + p.nama + "\" berhasil ditambahkan ke antrian.");
     }
 
-    public Pasien dequeue() {
+    public Pasien layani() {
         if (isEmpty()) {
             return null;
         }

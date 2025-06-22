@@ -41,6 +41,8 @@ public class TransaksiQueue {
         dataTransaksi.tampil();
     }
 
+
+
     public void getRiwayat() {
         if (isEmpty()) {
             System.out.println("Tidak ada antrian.");

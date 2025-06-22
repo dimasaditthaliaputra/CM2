@@ -32,7 +32,7 @@ public class SistemAntrianKlinik {
                     String keluhan = sc.nextLine();
 
                     Pasien pasienBaru = new Pasien(namaPasien, nikPasien, keluhan);
-                    antrianPasien.enqueue(pasienBaru);
+                    antrianPasien.add(pasienBaru);
                     break;
 
                 case 2:
@@ -43,7 +43,7 @@ public class SistemAntrianKlinik {
                     if (antrianPasien.isEmpty()) {
                         System.out.println("Antrian kosong, tidak ada pasien untuk dilayani.");
                     } else {
-                        Pasien pasienDilangani = antrianPasien.dequeue();
+                        Pasien pasienDilangani = antrianPasien.layani();
                         System.out.println("Melayani pasien berikut:");
                         pasienDilangani.tampil();
 
