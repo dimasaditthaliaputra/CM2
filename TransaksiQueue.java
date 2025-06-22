@@ -29,7 +29,7 @@ public class TransaksiQueue {
         if (isEmpty()) {
             front = rear = 0;
         } else {
-            if (rear == data.length - 1) {
+            if (rear == max - 1) {
                 rear = 0;
             } else {
                 rear++;
@@ -40,8 +40,6 @@ public class TransaksiQueue {
         System.out.println("Berhasil Melayani Pasien");
         dataTransaksi.tampil();
     }
-
-
 
     public void getRiwayat() {
         if (isEmpty()) {
